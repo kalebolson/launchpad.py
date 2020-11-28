@@ -74,6 +74,12 @@ def main():
 			print("Dicer")
 			mode = "Dcr"
 
+	elif launchpad.LaunchpadLPX().Check( 1 ):
+		lp = launchpad.LaunchpadLPX()
+		if lp.Open( 1, "lpx" ):
+			print("Launchpad X")
+			mode = "Pro"
+
 	elif launchpad.MidiFighter64().Check( 0 ):
 		lp = launchpad.MidiFighter64()
 		if lp.Open( 0 ):
